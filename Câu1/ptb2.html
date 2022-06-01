@@ -9,12 +9,13 @@
 </head>
 <body>
     <script>
-        var x = myFunction(8, 12, -20);
-        document.getElementById("demo").innerHTML = x;
+        function solve(a, b, c) {
+    var result = (-1 * b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+    var result2 = (-1 * b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+    return result + "<br>" + result2;
+}
+document.write(solve(8, 12, -20));
 
-        function myFunction(a, b, c) {
-            return a*2 + b*x + c == 0;
-        }
     </script>
 </body>
 </html>
